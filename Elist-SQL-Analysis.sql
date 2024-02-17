@@ -77,15 +77,15 @@ order by
 --Are there certain products that are getting refunded more frequently than others? Find what products are getting refunded more frequently and see if they are worth continuing to sell in further analysis. 
 
 /*
-product_clean							refunds	refund_rate
+product_clean							refunds			refund_rate
 ThinkPad Laptop							342			0.11728395061728381
-Macbook Air Laptop					453			0.11427850655903178
-Apple iPhone								22			0.0763888888888889
-27in 4K gaming monitor			1444		0.061688311688311542
-Apple Airpods Headphones		2636		0.054458309230642148
+Macbook Air Laptop						453			0.11427850655903178
+Apple iPhone							22			0.0763888888888889
+27in 4K gaming monitor						1444		0.061688311688311542
+Apple Airpods Headphones					2636		0.054458309230642148
 Samsung Webcam							186			0.02584410170904548
-Samsung Charging Cable Pack	294			0.013410573370432872
-bose soundsport headphones	0				0.0
+Samsung Charging Cable Pack					294			0.013410573370432872
+bose soundsport headphones					0				0.0
 */
 select 
 	case when product_name = '27in"" 4k gaming monitor' then '27in 4K gaming monitor' else product_name end as product_clean,
